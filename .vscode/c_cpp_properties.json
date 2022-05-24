@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "name": "win64",
+            "includePath": [
+                "${workspaceFolder}/Engine/source/**",
+                "C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/um",
+                "C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/ucrt",
+                "C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/shared"
+            ],
+            "defines": [
+                "EXPORT",
+                "DEBUG"
+            ],
+            "windowsSdkVersion": "10.0.19041.0",
+            "compilerPath": "C:/Program Files/LLVM/bin/clang.exe",
+            "cppStandard": "c++20",
+            "intelliSenseMode": "clang-x64"
+        }
+    ],
+    "version": 4
+}

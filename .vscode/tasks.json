@@ -1,0 +1,35 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Engine",
+            "type": "shell",
+            "command": "${workspaceFolder}/Engine/build.bat",
+            "options": {
+                "cwd": "${workspaceFolder}/Engine"
+            },
+            "group": "build"
+        },
+        {
+            "label": "Build Editor",
+            "type": "shell",
+            "command": "${workspaceFolder}/Editor/build.bat",
+            "options": {
+                "cwd": "${workspaceFolder}/Editor"
+            },
+            "group": "build"
+        },
+        {
+            "label": "Build All",
+            "type": "shell",
+            "command": "${workspaceFolder}/build_all.bat",
+            "options": {"cwd": "${workspaceFolder}"},
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
