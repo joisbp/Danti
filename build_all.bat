@@ -1,5 +1,6 @@
 @echo off
 REM Build Everything
+IF exist bin ( @echo off ) ELSE ( mkdir bin)
 
 PUSHD Engine
 CALL build.bat

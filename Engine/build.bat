@@ -12,7 +12,7 @@ SET assembly=Engine
 SET compilerFlags=-g -shared -Wvarargs -Wall -Werror
 REM -wall -Werror
 
-SET includeFlags=-Isource -I"C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/um" -I"C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/ucrt" -I"C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/shared"
+SET includeFlags=-Isource -Isource/**/ -I"C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/um" -I"C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/ucrt" -I"C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/shared"
 
 SET defines=-Ddebug -DEXPORT -DCRT_SECURE_NO_WARNINGS
 
